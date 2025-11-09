@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 20px 50px;
+}
+
+.main-header h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800; 
+  font-size: 22px; 
+  color: #ffffff; 
+  text-decoration: none; 
+  position: relative; 
+  letter-spacing: 1px; 
+  transition: all 0.4s ease; 
+  text-transform: uppercase;
+}
+.main-header h1:hover{ 
+  letter-spacing: 2px; 
+  text-shadow: 0 0 5px #ffd700; 
+  transform: scale(1.05); 
+  transition: all 0.4s ease; 
+}
+
+.main-header h2 { 
+  font-size: 26px; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+  text-align: center; 
+  flex: 1; 
+  color: rgb(218, 180, 0); 
+  letter-spacing: 20px; 
+  font-family: "Brush Script MT", cursive; 
+  font-style: normal; 
+  position: relative; 
+  left: -50px; 
+}
+
+.main-header a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu { 
+  position: absolute; 
+  top: 9px; 
+  right: 10px; 
+  z-index: 2; 
+} 
+
+.menu summary { 
+  font-size: 15px; 
+  color: rgb(0, 0, 0); 
+  background: rgb(255, 255, 255); 
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  list-style: none; 
+  border: none; 
+} 
+
+.menu ul { 
+  background: #ffffff; 
+  border-radius: 6px; 
+  margin-top: 8px; 
+  padding: 10px 0; 
+  list-style: none; 
+  min-width: 160px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+} 
+
+.menu ul li { 
+  text-align: left; 
+  padding: 0 15px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+} 
+
+.menu ul li a { 
+  color: #000000; 
+  text-decoration: none; 
+  font-size: 18px; 
+  display: block; 
+  transition: color 0.3s ease; 
+} 
+
+.menu ul li a:hover { 
+  color: #00bcd4; 
+}
+
+.video-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider {
+  width: 80%;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.slides img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: none;
+}
+
+.slides img.active {
+  display: block;
+  border-radius: 20px;
+}
+
+.dots {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #555;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: yellow;
+}
+
+.image-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.car-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.car-description h2 {
+  font-size: 2rem;
+  color: yellow;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.car-description p {
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.thumbnail-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb.active {
+  border: 3px solid yellow;
+  transform: scale(1.05);
+}
+
+.lambo-textblack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 80px 10%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.lambocar {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lambocar h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.lambocar p {
+  line-height: 1.7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.slider1 {
+  flex: 1;
+  max-width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.slides2 img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+}
+
+.slides2 img.active1 {
+  display: block;
+}
+
+.thumb-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb1 {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.thumb1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb1.active {
+  border: 3px solid yellow;
+  transform: scale(1.05);
+}
+
+.dots1 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.dot1 {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #555;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot1.active {
+  background: yellow;
+}
+
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+body.fade-out {
+  opacity: 0;
+}
+
+.lambo-notice {
+  color: #ffd700; 
+  font-size: 0.9rem;
+  margin-top: 15px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.lambo-contact {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.lambo-contact a {
+  color: #ffd700; 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.lambo-contact a:hover {
+  color: #00bcd4; 
+}
+
+.lambo-contact-form {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  color: #fff;
+  max-width: 500px;
+}
+
+.lambo-contact-form h3 {
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.lambo-contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.lambo-contact-form input,
+.lambo-contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.lambo-contact-form button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.lambo-contact-form button:hover {
+  background-color: #e0b200;
+}
+
+.lambo-social {
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.lambo-social h3 {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.lambo-social p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #ffd700);
+}
+
+.scroll-menu-notice {
+  text-align: center;
+  margin: 30px 0;
+  color: #ffd700; 
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s ease 2.5s forwards;
+}
+
+.splash-logo {
+  width: 180px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards, zoomOut 1s ease 2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoomOut {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(1.2); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.splash-screen.fade-out {
+  opacity: 0;
+}
+
+/* Splash logo animation */
+.splash-logo {
+  max-width: 300px;
+  height: auto;
+  animation: logoEntrance 1s ease forwards;
+}
+
+@keyframes logoEntrance {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Main content hidden initially */
+#mainContent {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+#mainContent.visible {
+  opacity: 1;
+}
