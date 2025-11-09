@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carshow Online</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="splash-screen" id="splashScreen">
+    <img src="lambologo1.png" alt="Lamborghini Logo" class="splash-logo">
+  </div>
+
+  <div id="mainContent">
+  <header class="header">
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="Batman Returns - the Lamborghini Revuelto.mp4" type="video/mp4"></video>
+
+  <div class="overlay">
+      <h1>Welcome to Carshow Philippines</h1>
+      <p>Please press the icon to view more cars</p>
+      <a href="viewmore.html" class="btn" id="viewMoreBtn">View More</a>
+  </div>
+  </header>
+  </div>
+
+  <section id="about-us" class="about-us">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Carshow.ph! We are passionate about showcasing the finest sports cars,
+      including Lamborghini, Ferrari, McLaren, and Porsche. Our goal is to provide enthusiasts
+      and car lovers with the latest updates, high-quality images, and detailed information about each vehicle.
+    </p>
+    <p>
+      Whether you want to explore new models, compare cars, or simply admire automotive design,
+      Carshow.ph is your go-to destination. Our team continuously updates the website to ensure
+      you have the best experience and the latest content.
+    </p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-wrapper">
+
+    <div class="lambo-contact-form">
+      <h3>Send Us a Message</h3>
+        <p>Have questions or suggestions? Drop us a message below!</p>
+
+    <form action="https://formspree.io/f/xblpvyln" method="POST">
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" name="email" id="email" placeholder="example@email.com" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message:</label>
+      <textarea name="message" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+    </div>
+
+    <div class="lambo-social">
+      <h3>Approach Us via Social Media</h3>
+        <p>Connect with us on our social media platforms:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/justin.karl.manalese" target="_blank" aria-label="Facebook">
+        <img src="317746_facebook_social media_social_icon.png" alt="Facebook">
+      </a>
+
+      <a href="https://www.instagram.com/jztineeee_/" target="_blank" aria-label="Instagram">
+        <img src="1298747_instagram_brand_logo_social media_icon.png" alt="Instagram">
+      </a>
+    </div>
+    </div>
+
+    </div>
+    </section>
+  </div> 
+</body>
+</html>
